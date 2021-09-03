@@ -7,14 +7,14 @@ import {
   Route,
 } from 'react-router-dom';
 
-import mainpage from './compnents/mainpage';
+import Mainpage from './compnents/Mainpage';
 
 function App() {
   return (
     <HashRouter basename={process.env.PUBLIC_URL + '/'}>
   
       <Switch>
-        <Route path='/' exact component={mainpage} />
+        <Route path='/' exact component={Mainpage} />
       </Switch>
 
     </HashRouter>
