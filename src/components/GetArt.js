@@ -23,25 +23,22 @@ function GetArt(props){
   else if (!isLoaded){
     return(<h1>Loading..</h1>)
   }
-  else //Actual return if data has been loaded
-    console.log(items.data[0])
+  else { //Actual return if data has been loaded
+    console.log(items.data[0].title)
     items.data.map((item) => {<li>{item.id}</li>})
 
-
-    let i = 0;
-    let artworks = [];
-    for(artpiece in items.data){
-      artworks.push(
-        
-      )
-    }
+    //Create a list item for each painting in the array
+    let artworks = items.data.map(item => 
+      <li>{item.title} by {item.artist_title}</li>
+    );
 
     return(
       <div>
         <h1>{Object.keys(items.data).length }</h1>
-        <ul>{idList}</ul>
+        <ul>{artworks}</ul>
       </div>
     );
+  }
 }
 
 export default GetArt;
