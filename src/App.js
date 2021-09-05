@@ -7,7 +7,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Mainpage from './compnents/Mainpage';
+import Mainpage from './components/Mainpage';
 
 function App() {
   return (
