@@ -1,4 +1,4 @@
-//https://github.com/Mrchow3/Huron2021WebsiteDesign/blob/main/huron/src/components/pages/Home.js
+
 //https://www.youtube.com/watch?v=VywxIQ2ZXw4&t=342s
 
 import React, {useState, useEffect} from 'react'
